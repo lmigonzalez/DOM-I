@@ -40,3 +40,66 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 };
 
 console.log('project wired!')
+
+
+
+const a1 = document.querySelectorAll('nav a')[0].innerHTML = siteContent.nav["nav-item-1"];
+
+const a2 = document.querySelectorAll('nav a')[1].innerHTML = siteContent.nav["nav-item-2"];
+
+const a3 = document.querySelectorAll('nav a')[2].innerHTML = siteContent.nav["nav-item-3"];
+
+const a4 = document.querySelectorAll('nav a')[3].innerHTML = siteContent.nav["nav-item-4"];
+
+const a5 = document.querySelectorAll('nav a')[4].innerHTML = siteContent.nav["nav-item-5"];
+
+const a6 = document.querySelectorAll('nav a')[5].innerHTML = siteContent.nav["nav-item-6"];
+
+const allA = document.querySelectorAll('nav a');
+
+allA.forEach(element => {
+  element.classList.add('italic')
+});
+
+const logoImg = document.querySelector('.logo').src = siteContent['images']['logo-img'];
+
+const h1 = document.querySelector('.cta-text h1').innerHTML = siteContent.cta['h1'];
+
+const btn = document.querySelector('.cta-text button').innerHTML = siteContent.cta['button'];
+
+const ctaImg = document.querySelector('#cta-img').src = siteContent['images']['cta-img'];
+
+const topContentH4_0 = document.querySelectorAll('.top-content h4')[0].innerHTML = siteContent["main-content"]['features-h4'];
+
+const topContentp_0 = document.querySelectorAll('.top-content p')[0].innerHTML = siteContent['main-content']['features-content']
+
+const topContentH4_1 = document.querySelectorAll('.top-content h4')[1].innerHTML = siteContent["main-content"]['about-h4'];
+
+const topContentp_1 = document.querySelectorAll('.top-content p')[1].innerHTML = siteContent['main-content']['about-content']
+
+const middleImg = document.querySelector('.middle-img').src = siteContent['images']['accent-img'];
+
+
+const bottomContentH4_0 = document.querySelectorAll('.bottom-content h4')[0].innerHTML = siteContent["main-content"]['services-h4'];
+
+const bottomContentp_0 = document.querySelectorAll('.bottom-content p')[0].innerHTML = siteContent['main-content']['services-content'];
+
+const bottomContentH4_1 = document.querySelectorAll('.bottom-content h4')[1].innerHTML = siteContent["main-content"]['product-h4'];
+
+const bottomContentp_1 = document.querySelectorAll('.bottom-content p')[1].innerHTML = siteContent['main-content']['product-content'];
+
+const bottomContentH4_2 = document.querySelectorAll('.bottom-content h4')[2].innerHTML = siteContent["main-content"]['vision-h4'];
+
+const bottomContentp_2 = document.querySelectorAll('.bottom-content p')[2].innerHTML = siteContent['main-content']['vision-content'];
+
+
+const contacth4 = document.querySelector('.contact h4').innerHTML = siteContent['contact']['contact-h4'];
+
+const contactAddress = document.querySelectorAll('.contact p')[0].innerHTML = siteContent['contact']['address']
+const contactPhone = document.querySelectorAll('.contact p')[1].innerHTML = siteContent['contact']['phone']
+const contactEmail = document.querySelectorAll('.contact p')[2].innerHTML = siteContent['contact']['email']
+
+
+const fotterLink = document.querySelector('footer a');
+fotterLink.classList.add('bold')
+fotterLink.innerHTML = siteContent['footer']['copyright']
